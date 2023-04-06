@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS false)
 
 ###########################################################
 # Testing. Should not be enabled!
-add_compile_options("-Weverything")
+#add_compile_options("-Weverything")
 add_compile_options("-Wall")
 add_compile_options("-Wextra")
 add_compile_options("-Werror")
@@ -28,3 +28,8 @@ project("build-counter"
 add_executable("${PROJECT_NAME}"
 	src/Main.cpp
 )
+
+###########################################################
+# Project versioning
+configure_file(BCConfig.h.in BCConfig.h)
+target_include_directories("${PROJECT_NAME}" PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
