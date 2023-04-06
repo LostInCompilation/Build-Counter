@@ -15,13 +15,12 @@ add_compile_options("-Weverything")
 add_compile_options("-Wall")
 add_compile_options("-Wextra")
 add_compile_options("-Werror")
-###########################################################
 
 ###########################################################
 # Our project
 project("build-counter"
 	VERSION 0.1.0
-	DESCRIPTION "A small tool to count build numbers and create build timestamps"
+	DESCRIPTION "A small tool to count build numbers and create build timestamps."
 	LANGUAGES CXX
 )
 

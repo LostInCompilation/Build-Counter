@@ -2,9 +2,9 @@
 
 int main()
 {
-    uint32_t ui = -1;
+    //uint32_t ui = -1;
     
-    std::cout << "Hello!" << std::endl;
+    std::cout << "Hello! It's working." << std::endl;
     
     return 0;
 }
